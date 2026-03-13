@@ -516,7 +516,7 @@ text-decoration:none;
 
 .contact-form input,
 .contact-form textarea {
-  width: 100%;
+  width: 200%;
   padding: 12px;
   border-radius: 8px;
   border: 1px solid #ccc;
@@ -530,7 +530,7 @@ text-decoration:none;
 }
 
 .contact-form textarea {
-  min-height: 220px;
+  min-height: 120px;
   resize: none;
 }
 
