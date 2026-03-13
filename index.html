@@ -277,25 +277,19 @@ projects. I am always open to learning and working on new technologies.
 
 <!-- Right Side Form -->
 
-<div class="contact-form">
-
 <form name="contact" method="POST" data-netlify="true">
 
 <input type="hidden" name="form-name" value="contact">
 
-<input type="text" name="name" placeholder="Enter Your Name" required>
+<input type="text" name="name" placeholder="Your Name" required>
 
-<input type="email" name="email" placeholder="Enter Your Email" required>
+<input type="email" name="email" placeholder="Your Email" required>
 
-<input type="text" name="subject" placeholder="Enter Your Subject">
+<textarea name="message" placeholder="Your Message"></textarea>
 
-<textarea name="message" placeholder="Enter Your Message"></textarea>
-
-<button type="submit">Submit</button>
+<button type="submit">Send Message</button>
 
 </form>
-
-</div>
 
 
 
@@ -303,37 +297,7 @@ projects. I am always open to learning and working on new technologies.
 
 </section>
 
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
-<script>
-
-(function(){
-emailjs.init("ow5ZSPQj_f3n5cY7_");
-})();
-
-document.getElementById("contact-form")
-.addEventListener("submit", function(event){
-
-event.preventDefault();
-
-emailjs.sendForm(
-"service_318rd7t",
-"template_j2g7n8h",
-this,
-"ow5ZSPQj_f3n5cY7_"   // Public Key
-).then(function(){
-
-alert("Message Sent Successfully ✅");
-
-}, function(error){
-
-console.log(error);
-alert("Failed to send message ❌");
-
-});
-
-});
-
-</script>
 </body>
+
 </html>
