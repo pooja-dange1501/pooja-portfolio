@@ -306,10 +306,80 @@ left:-10px;
 /* image */
 
 .edu-img{
-width:120px;
-margin-bottom:10px;
-border-radius:10px;
+width:200px;
+height: 150px;
+margin-bottom:50px;
+border-radius:50px;
 }
+.services {
+  padding: 80px 10%;
+  background: #020617;
+  color: white;
+  text-align: center;
+}
+
+.heading {
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.heading span {
+  color: #00e5ff;
+}
+
+.services-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.services-box {
+  flex: 1 1 300px;
+  padding: 30px;
+  border-radius: 15px;
+  background: #0f172a;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: 0.4s;
+  box-shadow: 0 0 20px rgba(0, 140, 255, 0.2);
+}
+
+.services-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(0, 140, 255, 0.6);
+}
+
+.services-box i {
+  font-size: 40px;
+  color: #00e5ff;
+  margin-bottom: 15px;
+}
+
+.services-box h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.services-box p {
+  font-size: 14px;
+  color: #9ca3af;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #00e5ff;
+  color: black;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #00bcd4;
+}
+
 
 .skills{
 padding:80px 10%;
