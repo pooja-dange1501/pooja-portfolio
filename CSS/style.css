@@ -739,3 +739,7 @@ transform:scale(1.03);
   }
 
 }
+/* LAST ला असायला पाहिजे */
+@media (max-width: 768px) {
+   ...
+}
