@@ -626,3 +626,116 @@ transition:0.3s;
 transform:scale(1.03);
 
 }
+
+
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+  /* HEADER */
+  header {
+    padding: 15px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    margin: 5px 10px 0 0;
+    font-size: 14px;
+  }
+
+  /* HOME */
+  .home {
+    flex-direction: column;
+    padding: 120px 20px;
+    text-align: center;
+  }
+
+  .home-text h1 {
+    font-size: 32px;
+  }
+
+  .home-text p {
+    font-size: 14px;
+  }
+
+  .profile {
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+  }
+
+  .circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* TAGS */
+  .tags {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  /* ABOUT */
+  .about-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-box {
+    width: 100%;
+  }
+
+  /* EDUCATION TIMELINE FIX */
+  .timeline::after {
+    left: 10px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    padding-left: 40px;
+    text-align: left !important;
+  }
+
+  .timeline-item.left,
+  .timeline-item.right {
+    left: 0;
+  }
+
+  .timeline-item::before {
+    left: 0;
+  }
+
+  .edu-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* SERVICES */
+  .services-container {
+    flex-direction: column;
+  }
+
+  /* SKILLS */
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* PROJECT */
+  .project-card {
+    width: 100%;
+  }
+
+  /* CONTACT */
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+}
